@@ -614,7 +614,9 @@ body {
 .pictures div img {
     /* transition: all 0.3s; */
 }
-
+.pictures div img:hover {
+    cursor: pointer;
+}
 .pictures div {
     height: 187px;
     width: 220px;
