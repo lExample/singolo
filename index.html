@@ -12,77 +12,102 @@
 
 <body>
     <div>
-        <header class="header1">
+        <header class="header1" id="home">
+            <div class="slash-menu">
+                <a href="#" class="slash-menu__button">
+                    <span id="lines"></span>
+                    <span id="lines"></span>
+                    <span id="lines"></span>
+                </a>
+                <nav class="menu-nav">
+                    <a href="#home" class="slash-menu__nav">home</a>
+                    <a href="#services" class="slash-menu__nav">services</a>
+                    <a href="#portfolio" class="slash-menu__nav">portfolio</a>
+                    <a href="#about" class="slash-menu__nav">about</a>
+                    <a href="#contact" class="slash-menu__nav">contact</a>
+                </nav>
+            </div>
+
+
             <h1 class="header__img"><img src="assets/singolo-logo.png" alt="singolo"></h1>
             <ul class="header__hotbar">
-                <ol><a href="">home<span class="dot"></span></a></ol>
-                <ol><a href="">services</a></ol>
-                <ol><a href="">portfolio</a></ol>
-                <ol><a href="">about</a></ol>
-                <ol><a href="">contact</a></ol>
+                <ol><a href="#home">home</a></ol>
+                <ol><a href="#services">services</a></ol>
+                <ol><a href="#portfolio">portfolio</a></ol>
+                <ol><a href="#about">about</a></ol>
+                <ol><a href="#contact">contact</a></ol>
             </ul>
         </header>
         <div class="header__bottom-line"></div>
     </div>
     <div class="slider">
-        <div class="slider__phone-vertical">
-            <button class="chev-left"><img src="assets/slider-img/chev-left.png" alt=""></button>
-            <img src="assets/slider-img/iPhone-Vertical.png" alt="iPhone-Vertical">
-        </div>
 
-        <div class="slider__phone-horizontal">
-            <button class="chev-right"><img src="assets/slider-img/chev-right.png" alt=""></button>
-            <img src="assets/slider-img/iPhone-Horizontal.png" alt="iPhone-Horizontal">
+        <div class="slide-img">
+
+            <div class="slide1">
+                <img src="assets/slide/Slide-1.jpg" alt="">
+            </div>
+            <div class="slide2">
+                <img src="assets/slide/Slide-2.jpg" alt="">
+            </div>
+            <button id="chev-left"><img src="assets/slider-img/chev-left.png" alt=""></button>
+            <button id="chev-right"> <img src="assets/slider-img/chev-right.png" alt=""></button>
+            <button id="iphone1"></button>
+            <button id="iphone2"></button>
+            <button id="iphone3"></button>
+            <div id="black-vertical"></div>
+            <div id="black-horizontal"></div>
+            <div id="black-central"></div>
         </div>
 
     </div>
     <div class="slider__bottom-line"></div>
-    <div class="services__title">
+    <div class="services__title" id="services">
         <h2 class="services__title-title">Our Services</h2>
         <p class="services__title-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
             mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus,
             tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
     </div>
-    <div class="services">
+    <div class="services"">
         <div>
-            <img src="assets/services/Pen.png" alt="Pen">
-            <h4>Custom Design</h4>
-            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices
-                velit.</p>
-        </div>
-        <div>
-            <img src="assets/services/Bulb.png" alt="Bulb">
-            <h4>Inovative Ideas</h4>
-            <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
-            </p>
-        </div>
-        <div>
-            <img src="assets/services/Heart.png" alt="Heart">
-            <h4>Love Is The Answer</h4>
-            <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque
-                condimentum.
-            </p>
-        </div>
-        <div>
-            <img src="assets/services/Phone.png" alt="Phone">
-            <h4>Responsive Layout</h4>
-            <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-        </div>
-        <div c>
-            <img src="assets/services/Bubble.png" alt="Bubble">
-            <h4>24/ 7 Support</h4>
-            <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas
-                venenatis lorem .</p>
-        </div>
-        <div>
-            <img src="assets/services/Star.png" alt="Star">
-            <h4>Feel Like A Star</h4>
-            <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-        </div>
+            <img src=" assets/services/Pen.png" alt="Pen">
+        <h4>Custom Design</h4>
+        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices
+            velit.</p>
+    </div>
+    <div>
+        <img src="assets/services/Bulb.png" alt="Bulb">
+        <h4>Inovative Ideas</h4>
+        <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
+        </p>
+    </div>
+    <div>
+        <img src="assets/services/Heart.png" alt="Heart">
+        <h4>Love Is The Answer</h4>
+        <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque
+            condimentum.
+        </p>
+    </div>
+    <div>
+        <img src="assets/services/Phone.png" alt="Phone">
+        <h4>Responsive Layout</h4>
+        <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+    </div>
+    <div c>
+        <img src="assets/services/Bubble.png" alt="Bubble">
+        <h4>24/ 7 Support</h4>
+        <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas
+            venenatis lorem .</p>
+    </div>
+    <div>
+        <img src="assets/services/Star.png" alt="Star">
+        <h4>Feel Like A Star</h4>
+        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+    </div>
     </div>
     <div class="services__bottom-line"></div>
     <div class="main">
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
             <h2 class="portfolio__title">Portfolio</h2>
             <p class="portfolio__title-about">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
                 lacinia odio sem nec elit.</p>
@@ -134,7 +159,7 @@
     </div>
     <div class="main__bottom-line"></div>
     <section>
-        <div class="about">
+        <div class="about" id="about">
             <h1 class="about__title">About Us</h1>
             <p class="about__title-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
                 mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus,
@@ -216,7 +241,7 @@
     </div>
     <div class="social__bottom-line"></div>
     <footer>
-        <div class="getaquote">
+        <div class="getaquote" id="contact">
             <h1>Get a Quote</h1>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
                 erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
@@ -224,13 +249,14 @@
             <div class="form">
                 <div class="form__input">
                     <form action="URL">
-                        <input type="text" name="Name" placeholder="Name (Required)" required>
+                        <input id="input-name" type="text" name="Name" placeholder="Name (Required)" required>
                         <input type="Email" name="Email" placeholder="Email (Required)" required>
-                        <input type="text" placeholder="Subject">
+                        <input id="input-subject" type="text" placeholder="Subject">
                         <textarea name="Describe" id="describe"
                             placeholder="Describe your project in detail..."></textarea>
                         <button id="submit">submit</button>
                     </form>
+
                 </div>
                 <div class="form__contact">
                     <h3>Contact Information</h3>
@@ -261,7 +287,7 @@
                 </div>
                 <div id="footer-icons">
                     <ul>
-                        <ol><img src="assets/social/Facebook.png" alt="Facebook"></ol>
+                        <ol id="padd"><img src="assets/social/Facebook.png" alt="Facebook"></ol>
                         <ol><img src="assets/social/Google.png" alt="Google"></ol>
                         <ol><img src="assets/social/Twitter.png" alt="Twitter"></ol>
                         <ol><img src="assets/social/linkedin.png" alt="linkedin"></ol>
@@ -269,8 +295,14 @@
                 </div>
             </div>
         </div>
-
+        <div class="modal">
+            <p>Письмо отправлено</p>
+            <p id="topic"></p>
+            <p id="description"></p>
+            <button id="ok">OK</button>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
