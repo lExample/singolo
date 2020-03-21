@@ -113,13 +113,17 @@ body {
 }
 
 header {
-    max-width: 1020px;
+    position: fixed;
+    width: 1020px;
     height: 90px;
     background-color: #2d303a;
-    margin: 0 auto;
+    margin: auto;
+    left: 0;
+    right: 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
+    z-index: 999;
 }
 
 @media (max-width:1020px) {
@@ -183,6 +187,7 @@ header {
 
 .header__hotbar ol a:hover {
     color: #e76962;
+    cursor: pointer;
 }
 
 
@@ -196,7 +201,7 @@ header {
 .slider {
     width: 1020px;
     height: 595px;
-    margin: -1px auto;
+    margin: 84px auto 0;
     background-color: #f06c64;
     overflow: hidden;
 }
@@ -614,9 +619,11 @@ body {
 .pictures div img {
     /* transition: all 0.3s; */
 }
+
 .pictures div img:hover {
     cursor: pointer;
 }
+
 .pictures div {
     height: 187px;
     width: 220px;
