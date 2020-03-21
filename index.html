@@ -12,7 +12,7 @@
 
 <body>
     <div>
-        <header class="header1" id="home">
+        <header class="header1">
             <div class="slash-menu">
                 <a href="#" class="slash-menu__button">
                     <span id="lines"></span>
@@ -31,11 +31,11 @@
 
             <h1 class="header__img"><img src="assets/singolo-logo.png" alt="singolo"></h1>
             <ul class="header__hotbar">
-                <ol><a href="#home">home</a></ol>
-                <ol><a href="#services">services</a></ol>
-                <ol><a href="#portfolio">portfolio</a></ol>
-                <ol><a href="#about">about</a></ol>
-                <ol><a href="#contact">contact</a></ol>
+                <ol><a id="home-color">home</a></ol>
+                <ol><a id="services-color">services</a></ol>
+                <ol><a id="portfolio-color">portfolio</a></ol>
+                <ol><a id="about-color">about</a></ol>
+                <ol><a id="contact-color">contact</a></ol>
             </ul>
         </header>
         <div class="header__bottom-line"></div>
@@ -248,7 +248,7 @@
                 mauris condimentum nibh.</p>
             <div class="form">
                 <div class="form__input">
-                    <form action="URL">
+                    <form action="URL" id="form">
                         <input id="input-name" type="text" name="Name" placeholder="Name (Required)" required>
                         <input type="Email" name="Email" placeholder="Email (Required)" required>
                         <input id="input-subject" type="text" placeholder="Subject">
