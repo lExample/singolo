@@ -32,12 +32,75 @@ elem1.onmouseout = function () {
 
 let nav = document.querySelectorAll('.header__hotbar ol a');
 
-nav.forEach(item => {
-    item.onclick = function () {
+const headerHeight = 90;
+const servicesPosition = document.querySelector('#services').offsetTop - headerHeight;
+const portfolioPosition = document.querySelector('#portfolio').offsetTop - headerHeight;
+const aboutPosition = document.querySelector('#about').offsetTop - headerHeight;
+const contactPosition = document.querySelector('#contact').offsetTop - headerHeight;
+
+
+const currentPos = window.pageYOffset;
+
+const homeColor = document.querySelector('#home-color');
+const servicesColor = document.querySelector('#services-color');
+const aboutColor = document.querySelector('#about-color');
+const portfolioColor = document.querySelector('#portfolio-color');
+const contactColor = document.querySelector('#contact-color');
+
+window.addEventListener('scroll', function () {
+    let currentPos = window.pageYOffset;
+    if (currentPos >= servicesPosition && currentPos < portfolioPosition) {
         nav.forEach(item => item.style.color = 'white');
-        item.style.color = '#f06c64';
+        servicesColor.style.color = '#f06c64';
+    } else if (currentPos >= portfolioPosition && currentPos < aboutPosition) {
+        nav.forEach(item => item.style.color = 'white');
+        portfolioColor.style.color = '#f06c64';
+    } else if (currentPos >= aboutPosition && currentPos < contactPosition) {
+        nav.forEach(item => item.style.color = 'white');
+        aboutColor.style.color = '#f06c64';
+    } else if (currentPos >= contactPosition) {
+        nav.forEach(item => item.style.color = 'white');
+        contactColor.style.color = '#f06c64';
     }
-})
+    if (currentPos < 595) {
+        nav.forEach(item => item.style.color = 'white');
+        homeColor.style.color = '#f06c64';
+    }
+});
+
+servicesColor.onclick = function () {
+    window.scrollTo({
+        top: servicesPosition,
+        behavior: 'smooth'
+    });
+}
+portfolioColor.onclick = function () {
+    window.scrollTo({
+        top: portfolioPosition,
+        behavior: 'smooth'
+    });
+}
+aboutColor.onclick = function () {
+    window.scrollTo({
+        top: aboutPosition,
+        behavior: 'smooth'
+    });
+}
+contactColor.onclick = function () {
+    window.scrollTo({
+        top: contactPosition,
+        behavior: 'smooth'
+    });
+}
+homeColor.addEventListener('click', scrollTop);
+
+function scrollTop() {
+    window.scrollTo({
+        top,
+        behavior: 'smooth'
+    });
+}
+
 
 let slide1 = document.querySelector('.slide1')
 let slide2 = document.querySelector('.slide2')
@@ -176,7 +239,8 @@ submit.onclick = function () {
 }
 
 let ok = document.querySelector('#ok');
-
+const form = document.querySelector('#form');
 ok.onclick = function () {
+    form.reset();
     modal.style.display = 'none';
 }
