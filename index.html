@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,700,900&display=swap" rel="stylesheet">
@@ -11,35 +12,34 @@
 </head>
 
 <body>
-    <div>
-        <header class="header1">
-            <div class="slash-menu">
-                <a href="#" class="slash-menu__button">
-                    <span id="lines"></span>
-                    <span id="lines"></span>
-                    <span id="lines"></span>
-                </a>
-                <nav class="menu-nav">
-                    <a href="#home" class="slash-menu__nav">home</a>
-                    <a href="#services" class="slash-menu__nav">services</a>
-                    <a href="#portfolio" class="slash-menu__nav">portfolio</a>
-                    <a href="#about" class="slash-menu__nav">about</a>
-                    <a href="#contact" class="slash-menu__nav">contact</a>
-                </nav>
-            </div>
+    <header class="header1" id="home12">
+        <div class="slash-menu">
+            <a class="slash-menu__button">
+                <span id="lines"></span>
+                <span id="lines"></span>
+                <span id="lines"></span>
+            </a>
+            <nav class="menu-nav">
+                <a href="#home12" class="slash-menu__nav" id="home-color1">home</a>
+                <a href="#services" class="slash-menu__nav" id="services-color1">services</a>
+                <a href="#portfolio" class="slash-menu__nav" id="portfolio-color1">portfolio</a>
+                <a href="#about" class="slash-menu__nav" id="about-color1">about</a>
+                <a href="#contact" class="slash-menu__nav" id="contact-color1">contact</a>
+            </nav>
+        </div>
 
 
-            <h1 class="header__img"><img src="assets/singolo-logo.png" alt="singolo"></h1>
-            <ul class="header__hotbar">
-                <ol><a id="home-color">home</a></ol>
-                <ol><a id="services-color">services</a></ol>
-                <ol><a id="portfolio-color">portfolio</a></ol>
-                <ol><a id="about-color">about</a></ol>
-                <ol><a id="contact-color">contact</a></ol>
-            </ul>
-        </header>
-        <div class="header__bottom-line"></div>
-    </div>
+        <h1 class="header__img"><img src="assets/singolo-logo.png" alt="singolo"></h1>
+        <ul class="header__hotbar">
+            <ol><a id="home-color">home</a></ol>
+            <ol><a id="services-color">services</a></ol>
+            <ol><a id="portfolio-color">portfolio</a></ol>
+            <ol><a id="about-color">about</a></ol>
+            <ol><a id="contact-color">contact</a></ol>
+        </ul>
+    </header>
+    <!-- <div class="header__bottom-line"></div> -->
+
     <div class="slider">
 
         <div class="slide-img">
@@ -119,7 +119,7 @@
             </ul>
             <div class="pictures">
                 <div>
-                    <img src="assets/pictures/Project.jpg" alt="Project">
+                    <img id='mda' src="assets/pictures/Project.jpg" alt="Project">
                 </div>
                 <div>
                     <img src="assets/pictures/Project1.jpg" alt="Project1">
@@ -249,10 +249,10 @@
             <div class="form">
                 <div class="form__input">
                     <form action="URL" id="form">
-                        <input id="input-name" type="text" name="Name" placeholder="Name (Required)" required>
-                        <input type="Email" name="Email" placeholder="Email (Required)" required>
-                        <input id="input-subject" type="text" placeholder="Subject">
-                        <textarea name="Describe" id="describe"
+                        <input type="text" name="Name" placeholder="Name (Required)" required id="input__name">
+                        <input type="Email" name="Email" placeholder="Email (Required)" required id="input-email">
+                        <input id="input-name" type="text" placeholder="Subject">
+                        <textarea name="Describe" id="input-subject"
                             placeholder="Describe your project in detail..."></textarea>
                         <button id="submit">submit</button>
                     </form>
@@ -270,10 +270,10 @@
                             <span>Elm St. 14/05 Lost City</span>
                         </div>
                         <div id="second-icon">
-                            <span><a href="tel:035283318635">03528 331 86 35</a></span>
+                            <span><a href="tel:035283318635" class="asdas">03528 331 86 35</a></span>
                         </div>
                         <div id="third-icon">
-                            <span><a href="mailto:info@singolo.com"> info@singolo.com</a></span>
+                            <span><a href="mailto:info@singolo.com" class="asdas"> info@singolo.com</a></span>
                         </div>
                     </div>
 
